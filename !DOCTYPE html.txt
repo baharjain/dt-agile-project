@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Use "navbar navbar-expand-lg navbar-light bg-light" to create the horizontal navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Mindcare</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="About.html"
+              >About Us <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Blogs.html"
+              >Blogs<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <!-- Add "About Us" dropdown menu -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="aboutUsDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              functionality
+            </a>
+            <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+              <a class="dropdown-item" href="User.html">User</a>
+              <a class="dropdown-item" href="Psychologist.html">Psychologist</a>
+              <a class="dropdown-item" href="session.html">Session</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <!-- Add "Login" and "Sign Up" links -->
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Add Bootstrap JS and jQuery scripts for dropdown and toggler functionality -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="blogcontainer">
+      <h1>Blogs On mental health</h1>
+      <div class="blogitem">
+        <h2>Title: Nurturing Mental Health: The Path to Inner Well-being</h2>
+        <p>
+          In today's fast-paced and interconnected world, mental health has
+          emerged as a critical concern. The pressure to excel, cope with daily
+          challenges, and maintain a balance between personal and professional
+          life takes a toll on our mental well-being. However, acknowledging the
+          importance of mental health and actively working towards its nurturing
+          is vital for leading a fulfilling and meaningful life. In this blog,
+          we will explore the significance of mental health, the challenges we
+          face, and practical strategies to promote well-being.
+        </p>
+        <div class="button">
+          <button id="btn">Read More</button>
+        </div>
+      </div>
+      <br />
+      <hr size="5" color="black" />
+      <div class="blogitem">
+        <h2>Title: Unraveling Anxiety: Understanding, Coping, and Thriving</h2>
+        <p>
+          Anxiety is a common human emotion that everyone experiences at some
+          point in their lives. However, when anxiety becomes overwhelming and
+          interferes with daily life, it can be a challenging condition to
+          navigate. In this blog post, we'll delve into the world of anxiety,
+          exploring its causes, symptoms, coping strategies, and ways to promote
+          mental well-being.
+        </p>
+        <div class="button">
+          <button id="btn">Read More</button>
+        </div>
+      </div>
+      <br />
+      <hr size="5" color="black" />
+      <div class="blogitem">
+        <h2>
+          Title: The Art of Balancing Work and Life: Nurturing Well-being in a
+          Busy World
+        </h2>
+        <p>
+          In today's fast-paced and demanding world, achieving a healthy
+          work-life balance has become a significant challenge for many
+          individuals. Juggling professional responsibilities with personal
+          commitments and self-care can feel like an impossible feat. However,
+          striking a balance between work and life is crucial for our overall
+          well-being and happiness. In this blog, we will explore the importance
+          of work-life balance, the potential consequences of imbalance, and
+          practical strategies to cultivate harmony in our lives.
+        </p>
+        <div class="button">
+          <button id="btn">Read More</button>
+        </div>
+      </div>
+      <br />
+    </div>
+  </body>
+</html>
+
+
+//////////////////////////////////////////////////////////////////
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+ 
+</head>
+<body>
+    <!-- Use "navbar navbar-expand-lg navbar-light bg-light" to create the horizontal navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Mindcare</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="About.html">About Us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Blogs.html">Blogs<span class="sr-only">(current)</span></a>
+                </li>
+                <!-- Add "About Us" dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        functionality
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                        <a class="dropdown-item" href="User.html">User</a>
+                        <a class="dropdown-item" href="Psychologist.html">Psychologist</a>
+                        <a class="dropdown-item" href="session.html">Session</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <!-- Add "Login" and "Sign Up" links -->
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Add Bootstrap JS and jQuery scripts for dropdown and toggler functionality -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="content">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="1 (2).jpg" class="d-block w-100" alt="Keep your self calm">
+              </div>
+              <div class="carousel-item">
+                <img src="1 (1).jpg" class="d-block w-100" alt="Don't Strss">
+              </div>
+              <div class="carousel-item">
+                <img src="1 (3).jpg" class="d-block w-100" alt="Have patience">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+</body>
+</html>
+
+/////////////////////////////////////////////////////
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+ 
+</head>
+<body>
+    <!-- Use "navbar navbar-expand-lg navbar-light bg-light" to create the horizontal navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Mindcare</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="About.html">About Us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Blogs.html">Blogs<span class="sr-only">(current)</span></a>
+                </li>
+                <!-- Add "About Us" dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        functionality
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                        <a class="dropdown-item" href="User.html">User</a>
+                        <a class="dropdown-item" href="Psychologist.html">Psychologist</a>
+                        <a class="dropdown-item" href="session.html">Session</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <!-- Add "Login" and "Sign Up" links -->
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Add Bootstrap JS and jQuery scripts for dropdown and toggler functionality -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Log in</button>
+        </div>
+      </form>
+</body>
+</html>
+
+//////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+ 
+</head>
+<body>
+    <!-- Use "navbar navbar-expand-lg navbar-light bg-light" to create the horizontal navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Mindcare</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="About.html">About Us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Blogs.html">Blogs<span class="sr-only">(current)</span></a>
+                </li>
+                <!-- Add "About Us" dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        functionality
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                        <a class="dropdown-item" href="User.html">User</a>
+                        <a class="dropdown-item" href="Psychologist.html">Psychologist</a>
+                        <a class="dropdown-item" href="session.html">Session</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <!-- Add "Login" and "Sign Up" links -->
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Add Bootstrap JS and jQuery scripts for dropdown and toggler functionality -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">email</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">password</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">sign up</button>
+      </div>
+</body>
+</html>
+
+////////////////////////////////
